@@ -749,3 +749,9 @@ h1 {
         top: -3rem;
     }
 }
+
+@media screen and (max-width:330px) {
+    html {
+        font-size: 45%;
+    }
+}
