@@ -704,6 +704,22 @@ h1 {
     }
 }
 
+@media screen and (max-width:440px) {
+    .courses .form .form-content input {
+        width: 30rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    .join-btn {
+        display: none;
+    }
+
+    .box-container {
+        width: 44rem;
+        height: 35rem;
+    }
+}
+
 @media screen and (max-width:382px) {
     .box-container {
         width: 35rem;
