@@ -21,13 +21,13 @@ var swiper = new Swiper(".mySwiper", {
         modifier: 1,
         slideShadows: true,
     },
-    slidesPerView: "3",
+    //slidesPerView: "3",
     loop: true,
     centeredSlides: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    //autoplay: {
+    //  delay: 2500,
+    // disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -36,4 +36,25 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
 });
+
+const barBtn = document.querySelector("#bars")
+const resNav = document.querySelector(".res-nav-list")
+
+barBtn.onclick = () => {
+    resNav.classList.toggle("active")
+}
