@@ -684,7 +684,7 @@ h1 {
 
 @media screen and (max-width:382px) {
     .box-container {
-        width: 38rem;
+        width: 35rem;
         height: 35rem;
     }
 
@@ -699,5 +699,10 @@ h1 {
 
     .join-btn {
         display: none;
+    }
+
+    .courses .form .form-content input {
+        width: 25rem !important;
+        margin: 1rem 0 !important;
     }
 }
