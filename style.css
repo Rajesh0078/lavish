@@ -431,7 +431,6 @@ h1 {
 
 .feature-container .f-card {
     max-width: calc(100% / 3 - 2rem);
-    min-width: 20rem;
     border: .1rem dashed #acacac;
     border-radius: 2rem;
     padding: 6rem 2rem;
@@ -483,8 +482,8 @@ h1 {
     font-size: 1.8rem;
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, .8);
     border-radius: 50%;
+    margin-top: 5rem;
     padding: 1.5rem;
-    margin-top: 5.2rem;
     z-index: 10;
     background: #fff;
 }
@@ -631,6 +630,10 @@ h1 {
     .swiper-slide img {
         margin-left: 15rem;
     }
+
+    .feature-container .f-card {
+        max-width: calc(100% / 1 - 2rem);
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -650,6 +653,16 @@ h1 {
 
     .courses .form .free-courses {
         flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    .feature-container .f-card {
+        max-width: calc(100% / 1 - 2rem);
+    }
+
+    .feature-container .f-card .feature-icon p {
+        left: 15rem;
+        top: -3rem;
     }
 }
 
@@ -680,12 +693,33 @@ h1 {
     .courses .form .free-courses .cards {
         width: 100%;
     }
+
+    .courses .form .form-content input {
+        width: 40rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    .form-content {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:382px) {
     .box-container {
         width: 35rem;
         height: 35rem;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    form .btn {
+        margin-top: 1.3rem;
+    }
+
+    .form-content {
+        text-align: center;
     }
 
     .swiper-slide i {
@@ -704,5 +738,14 @@ h1 {
     .courses .form .form-content input {
         width: 25rem !important;
         margin: 1rem 0 !important;
+    }
+
+    .feature-container .f-card {
+        max-width: calc(100% / 1 - 2rem);
+    }
+
+    .feature-container .f-card .feature-icon p {
+        left: 15rem;
+        top: -3rem;
     }
 }
